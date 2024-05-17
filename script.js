@@ -120,3 +120,27 @@ for (item of users) {
     console.log(item);
   }
 }
+
+// დავალება 11
+
+let array7 = [32, 14, null, "40", 50];
+
+for (item of array7) {
+  if (Number(item) % 5 == 0 && item != null) console.log(item);
+}
+
+// დავალება 12
+
+let array8 = [
+  [2, -3, 5, 11],
+  [1, -35, -11],
+  [12, -36, -24],
+];
+
+for (item of array8) {
+  for (num of item) {
+    if (num >= 0) {
+      console.log(num);
+    }
+  }
+}
