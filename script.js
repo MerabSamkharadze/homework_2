@@ -2,7 +2,7 @@
 
 // დავალება 1
 
-for (i = 5; i < 100; i++) {
+for (let i = 5; i < 100; i++) {
   console.log(i);
 }
 
@@ -10,7 +10,7 @@ for (i = 5; i < 100; i++) {
 
 let array1 = [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12];
 
-for (item of array1) {
+for (let item of array1) {
   if (item > 0 && item < 10) {
     console.log(item);
   }
@@ -20,7 +20,7 @@ for (item of array1) {
 
 let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for (item of array2) {
+for (let item of array2) {
   if (item == 5) {
     console.log("არის!");
     break;
@@ -32,7 +32,7 @@ for (item of array2) {
 let array3 = [1, 2, 3, 4, 5];
 let sum = 0;
 
-for (item of array3) {
+for (let item of array3) {
   sum += item;
 }
 console.log(sum);
@@ -42,7 +42,7 @@ console.log(sum);
 let array4 = [1, 2, 3, 4, 5];
 let sum2 = 0;
 
-for (item of array4) {
+for (let item of array4) {
   sum2 += item;
 }
 let average = sum2 / array4.length;
@@ -52,7 +52,7 @@ console.log(average);
 
 let array5 = [1, 2, 3, 7, 6, 9];
 
-for (item of array5) {
+for (let item of array5) {
   if (item == 7) {
     continue;
   }
@@ -101,7 +101,7 @@ user2.age < 18 && user2.studentstatus == "active"
 
 let array6 = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
 
-for (item of array6) {
+for (let item of array6) {
   if (item % 2 == 0) {
     console.log(item);
   }
@@ -115,7 +115,7 @@ let users = [
   { username: "anna", status: true },
 ];
 
-for (item of users) {
+for (let item of users) {
   if (item.status == true) {
     console.log(item);
   }
@@ -125,7 +125,7 @@ for (item of users) {
 
 let array7 = [32, 14, null, "40", 50];
 
-for (item of array7) {
+for (let item of array7) {
   if (Number(item) % 5 == 0 && item != null) console.log(item);
 }
 
@@ -137,7 +137,7 @@ let array8 = [
   [12, -36, -24],
 ];
 
-for (item of array8) {
+for (let item of array8) {
   for (num of item) {
     if (num >= 0) {
       console.log(num);
